@@ -1,0 +1,54 @@
+// =============== pre-order ===============
+
+.pre-order {
+	margin-top: 1rem;
+	&__wrapp {
+		padding: 5rem 0 6.5rem 0;
+		background-color: #fafafa;
+		position: relative;
+		&::after {
+			content: "";
+			width: 100vw;
+			left: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			background-color: #fafafa;
+		}
+	}
+	&__point {
+		margin-bottom: 4.5rem;
+		padding-left: 5rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__point-list {
+		display: flex;
+		align-items: center;
+		gap: 5rem;
+	}
+	&__point-item {
+	}
+	&__point-go {
+	}
+}
+
+.pre-order {
+	&__container {
+		width: 210rem;
+		overflow: hidden;
+		padding-left: 2.5rem;
+	}
+	&__body {
+		width: calc(28.625rem * 3 + 80px);
+	}
+	&__list {
+	}
+}
+
+@media screen and (max-width: 1145px) {
+	.pre-order {
+		display: none;
+	}
+}

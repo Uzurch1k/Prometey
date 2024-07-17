@@ -1,0 +1,160 @@
+// =============== catalog-books ===============
+.books-html > .catalog-books {
+	margin-top: 1rem;
+	margin-bottom: 0;
+	.catalog-books__point-go a {
+		display: none;
+	}
+}
+.catalog-books {
+	margin: 1rem 0;
+	&__wrapp {
+		padding: 5rem 0 5rem 5rem;
+		background-color: #fafafa;
+		position: relative;
+		&::after {
+			content: "";
+			width: 100vw;
+			left: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			background-color: #fafafa;
+		}
+	}
+	&__point {
+		margin-bottom: 4.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__title {
+		font-family: var(--second-family);
+		font-size: 3.5rem;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	&__point-list {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
+	&__point-item {
+	}
+	&__point-go {
+	}
+}
+
+.books-card {
+	&__body {
+	}
+	&__list {
+		display: grid;
+		column-gap: 2rem;
+		row-gap: 1.3rem;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 1145px) {
+	.books-html > .catalog-books {
+		margin-top: 2rem;
+	}
+
+	.catalog-books {
+		margin: 0;
+		& > .container {
+			padding: 0;
+		}
+		&__wrapp {
+			padding: 3.75rem;
+			border-radius: 1.875rem;
+		}
+		&__point {
+			flex-direction: column-reverse;
+			gap: 2.5rem;
+			align-items: start;
+			margin-bottom: 1.7rem;
+		}
+		&__title {
+			font-size: 3rem;
+		}
+		&__point-list {
+			width: 100%;
+			gap: 0;
+			justify-content: space-between;
+		}
+		&__point-item {
+			a {
+				padding: 1rem 1rem 0.7rem 1rem;
+				border-radius: 3.125rem;
+				background: #f4f3f3;
+				font-size: 1.5rem;
+				&::before {
+					content: "";
+					display: none;
+				}
+			}
+		}
+		&__point-go {
+			display: none;
+		}
+	}
+
+	.books-card {
+		&__body {
+		}
+		&__list {
+			gap: 0.9rem;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
+@media screen and (max-width: 680px) {
+	.books-html > .catalog-books {
+		margin-top: 0.95rem;
+	}
+	.catalog-books {
+		&__wrapp {
+			padding: 1.875rem;
+			border-radius: 0.89256rem;
+		}
+		&__point {
+			gap: 1.2rem;
+			margin-bottom: 0.8rem;
+		}
+		&__title {
+			font-size: 1.5rem;
+		}
+		&__point-list {
+			width: 100%;
+			gap: 0;
+			justify-content: space-between;
+		}
+		&__point-item {
+			a {
+				padding: 0.3rem 0.7rem;
+				border-radius: 1.48756rem;
+				font-size: 0.625rem;
+				line-height: 0.9rem;
+				&::before {
+					content: "";
+					display: none;
+				}
+			}
+		}
+		&__point-go {
+			display: none;
+		}
+	}
+
+	.books-card {
+		&__body {
+		}
+		&__list {
+			grid-template-columns: 1fr 1fr;
+			gap: 0.45rem;
+		}
+	}
+}
